@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studying abroad</title>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- Small Navbar -->
+<nav class="small-navbar bg-light" id="smallNavbar">
+  <div class="container d-flex justify-content-center align-items-center py-1">
+    <ul class="navbar-nav flex-row gap-3">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i> admin@gmail.com</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa-solid fa-phone"></i> 01209150899</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+      <!-- Premium Navbar -->
+      <nav id="premiumNavbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+          <div class="container">
+              <a class="navbar-brand" href="index.html">
+                  <img src="" alt="Logo">
+              </a>
+  
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" href="index.html">Home <i class="fa-solid fa-plus"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">About <i class="fa-solid fa-plus"></i></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="country.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Country
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">AUS</a></li>
+                              <li><a class="dropdown-item" href="#">US</a></li>
+                              <li><a class="dropdown-item" href="#">JAP</a></li>
+                              <li><a class="dropdown-item" href="#">CAN</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="service.html">Services <i class="fa-solid fa-plus"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="events.html">Events <i class="fa-solid fa-plus"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="blog.html">Blog <i class="fa-solid fa-plus"></i></a>
+                          <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact <i class="fa-solid fa-plus"></i></a>
+                          </li>
+                      </li>
+                  </ul>
+  
+                  <div class="d-flex ms-lg-3">
+                      <a href="#" class="btn btn-premium">BOOK AN APPOINTMENT</a>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  
+      <!-- Mobile Menu Offcanvas -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="mobileMenuLabel">BrandName</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="country.html" id="mobileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Country
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="mobileDropdown">
+                          <li><a class="dropdown-item" href="#">AUS</a></li>
+                          <li><a class="dropdown-item" href="#">US</a></li>
+                          <li><a class="dropdown-item" href="#">JAP</a></li>
+                          <li><a class="dropdown-item" href="#">CAN</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+  
+              <div class="mt-3">
+                  <a href="#" class="btn btn-premium d-block">Get Started</a>
+              </div>
+  
+              <div class="mt-4 pt-3 border-top">
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="text-dark mx-3"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="text-dark mx-3"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-dark mx-3"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- Hero Slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+data-bs-interval="3000" data-bs-pause="false" style="height:100vh;">
+
+<!-- Indicators -->
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+       class="active"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+</div>
+
+<!-- Slides -->
+<div class="carousel-inner h-100">
+<div class="carousel-item active" style="background-image:url('images/slider-1.jpg');">
+ <div class="overlay"></div>
+ <div class="carousel-caption custom-caption">
+   <h1>Study in Canada</h1>
+   <p>Apply today for the upcoming intake</p>
+   <a href="#" class="btn custom-btn">Book an Appointment</a>
+   <a href="#" class="btn custom-btn">Read a Story</a>
+ </div>
+</div>
+<div class="carousel-item" style="background-image:url('images/slider-2.jpg');">
+ <div class="overlay"></div>
+ <div class="carousel-caption custom-caption">
+   <h1>Study in UK</h1>
+   <p>Admissions are open now</p>
+   <a href="#" class="btn custom-btn">Book an Appointment</a>
+   <a href="#" class="btn custom-btn">Read a Story</a>
+ </div>
+</div>
+<div class="carousel-item" style="background-image:url('images/slider-3.jpg');">
+ <div class="overlay"></div>
+ <div class="carousel-caption custom-caption">
+   <h1>Study in Australia</h1>
+   <p>Next intake starting soon</p>
+   <a href="#" class="btn custom-btn">Book an Appointment</a>
+   <a href="#" class="btn custom-btn">Read a Story</a>
+ </div>
+</div>
+</div>
+
+<!-- Controls -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+     data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+     data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+
+   
+   <!--logo slider -->
+   <!-- Heading for logo slider -->
+<div class="logo-section-heading text-center py-4">
+  <h2>We're proud to work with our preferred partners</h2>
+</div>
+   <div class="logo-slider">
+    <div class="slider-track">
+      <div class="slide"><img src="images/img_01.png" alt="Logo 1"></div>
+      <div class="slide"><img src="images/img_02.png" alt="Logo 2"></div>
+      <div class="slide"><img src="images/img_03.png" alt="Logo 3"></div>
+      <div class="slide"><img src="images/img_04.png" alt="Logo 4"></div>
+      <div class="slide"><img src="images/img_05.png" alt="Logo 5"></div>
+      <div class="slide"><img src="images/img_06.png" alt="Logo 6"></div>
+      
+      <!-- Repeat slides for infinite loop effect -->
+      <div class="slide"><img src="images/img_01.png" alt="Logo 1"></div>
+      <div class="slide"><img src="images/img_02.png" alt="Logo 2"></div>
+      <div class="slide"><img src="images/img_03.png" alt="Logo 3"></div>
+      <div class="slide"><img src="images/img_04.png" alt="Logo 4"></div>
+      <div class="slide"><img src="images/img_05.png" alt="Logo 5"></div>
+      <div class="slide"><img src="images/img_06.png" alt="Logo 6"></div>
+    </div>
+  </div>
+  <!-- Banner Section -->
+<!-- Banner Section -->
+<section class="banner-section py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Column: Heading + Cards -->
+      <div class="col-lg-7">
+        <!-- Section Heading -->
+        <h2 class="mb-4 fw-bold text-primary">Why Chosse us </h2>
+
+        <!-- Cards Grid -->
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm text-center py-3">
+              <div class="card-body">
+                <i class="fa-solid fa-graduation-cap fa-2x text-primary mb-2"></i>
+                <h5 class="card-title">Quality Education</h5>
+                <p class="card-text">Top-ranked universities worldwide.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm text-center py-3">
+              <div class="card-body">
+                <i class="fa-solid fa-hand-holding-dollar fa-2x text-success mb-2"></i>
+                <h5 class="card-title">Scholarships</h5>
+                <p class="card-text">Global scholarship opportunities.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm text-center py-3">
+              <div class="card-body">
+                <i class="fa-solid fa-passport fa-2x text-warning mb-2"></i>
+                <h5 class="card-title">Visa Support</h5>
+                <p class="card-text">Hassle-free visa processing help.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm text-center py-3">
+              <div class="card-body">
+                <i class="fa-solid fa-comments fa-2x text-info mb-2"></i>
+                <h5 class="card-title">Career Guidance</h5>
+                <p class="card-text">Expert advice for your career goals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm text-center py-3">
+              <div class="card-body">
+                <i class="fa-solid fa-globe fa-2x text-danger mb-2"></i>
+                <h5 class="card-title">Global Network</h5>
+                <p class="card-text">Connect with mentors and alumni.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm text-center py-3">
+              <div class="card-body">
+                <i class="fa-solid fa-plane-departure fa-2x text-secondary mb-2"></i>
+                <h5 class="card-title">Smooth Departure</h5>
+                <p class="card-text">Support till you reach your destination.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- Right Column: Image -->
+<!-- Right Column: Image -->
+<div class="col-lg-5 d-flex align-items-stretch">
+  <div class="full-height-container w-100">
+    <img src="images/studen-1.avif" alt="Study Abroad"
+         class="image-full-height">
+  </div>
+</div>
+
+    </div>
+  </div>
+  <!-- Background Image Section -->
+<section 
+  class="text-white" 
+  style="background: url('images/bannar-2.jpg') no-repeat center center; background-size: cover;">
+  
+  <!-- Overlay to darken background -->
+  <div style="background-color: rgba(0,0,0,0.6);">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-7">
+          <!-- Heading -->
+          <h2 class="mb-4 fw-bold">Explore Our Visa Services</h2>
+
+          <!-- Cards Grid -->
+          <div class="row g-3">
+            <!-- Card 1 -->
+            <div class="col-md-6">
+              <div class="card bg-dark bg-opacity-75 text-white h-100">
+                <div class="card-body">
+                  <i class="fa-solid fa-user-graduate fa-2x mb-3 text-info"></i>
+                  <h5 class="card-title">Student Visa</h5>
+                  <p class="card-text">Pursue education abroad with ease.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6">
+              <div class="card bg-dark bg-opacity-75 text-white h-100">
+                <div class="card-body">
+                  <i class="fa-solid fa-briefcase fa-2x mb-3 text-warning"></i>
+                  <h5 class="card-title">Work Permit</h5>
+                  <p class="card-text">Opportunities for professionals abroad.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6">
+              <div class="card bg-dark bg-opacity-75 text-white h-100">
+                <div class="card-body">
+                  <i class="fa-solid fa-plane-departure fa-2x mb-3 text-danger"></i>
+                  <h5 class="card-title">Tourist Visa</h5>
+                  <p class="card-text">Travel globally with simplified visa help.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6">
+              <div class="card bg-dark bg-opacity-75 text-white h-100">
+                <div class="card-body">
+                  <i class="fa-solid fa-house-user fa-2x mb-3 text-success"></i>
+                  <h5 class="card-title">Immigration</h5>
+                  <p class="card-text">Start your journey to a new home.</p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End Cards Grid -->
+        </div>
+      </div>
+    </div>
+  </div> <!-- End overlay -->
+</section>
+
+
+</section>
+<!--country section-->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="d-flex justify-content-between flex-wrap align-items-center mb-4">
+      <h2 class="fw-bold" style="color: black;">Make Your Choice for the <span class="text-primary">Preferred Nation</span></h2>
+      <p class="text-muted">Choosing the ideal destination for immigration is a pivotal decision...</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="mb-4">
+      <button class="filter btn btn-outline-primary me-2 active" data-filter="all">All</button>
+      <button class="filter btn btn-outline-primary me-2" data-filter=".europe">Europe</button>
+      <button class="filter btn btn-outline-primary me-2" data-filter=".northamerica">North America</button>
+    </div>
+
+    <!-- Grid of Countries -->
+    <div class="row" id="mix-wrapper">
+      <!-- Europe -->
+      <div class="mix europe col-md-3 mb-4">
+        <div class="card text-center p-3 shadow-sm h-100">
+          <img src="images/flags/canada.png" alt="Canada" class="flag-img mx-auto mb-2">
+          <h6 class="mb-0">Canada</h6>
+        </div>
+      </div>
+      <div class="col-md-3 mix europe mb-4">
+        <div class="card text-center shadow-sm p-3">
+          <img src="images/flags/belgium.jpg" alt="Belgium" class="flag-img">
+          <h6 class="mt-2">Belgium</h6>
+        </div>
+      </div>
+      <div class="col-md-3 mix europe mb-4">
+        <div class="card text-center shadow-sm p-3">
+          <img src="images/flags/denmark.jpg" alt="Denmark" class="flag-img">
+          <h6 class="mt-2">Denmark</h6>
+        </div>
+      </div>
+      <div class="col-md-3 mix europe mb-4">
+        <div class="card text-center shadow-sm p-3">
+          <img src="images/flags/australia.png" alt="Australia" class="flag-img">
+          <h6 class="mb-0">Australia</h6>
+        </div>
+      </div>
+
+      <!-- North America -->
+      <div class="col-md-3 mix northamerica mb-4">
+        <div class="card text-center shadow-sm p-3">
+          <img src="images/flags/grecce.jpg" alt="Crecce" class="flag-img">
+          <h6 class="mt-2">Grecce</h6>
+        </div>
+      </div>
+      <div class="col-md-3 mix northamerica mb-4">
+        <div class="card text-center shadow-sm p-3">
+          <img src="images/flags/france.webp" alt="France" class="flag-img">
+          <h6 class="mt-2">France</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--team section-->
+<section class="team-section-2 py-5">
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Left Heading -->
+      <div class="col-lg-5 mb-4">
+        <h2 class="fw-bold">Our trusted immigration <br> <span class="text-muted">support team</span></h2>
+        <p class="text-secondary mt-3">
+          At the heart of our commitment to providing exceptional immigration solutions stands.
+        </p>
+      </div>
+
+      <!-- Team Cards -->
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <!-- Single Team Member -->
+          <div class="col-md-4 col-sm-6">
+            <div class="team-img-card">
+              <img src="images/team-member/member-1.jpg" alt="Esther" class="img-fluid">
+              <div class="overlay">
+                <h5>Esther Howard</h5>
+                <p>Legal Advisor</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat for other members -->
+          <div class="col-md-4 col-sm-6">
+            <div class="team-img-card">
+              <img src="images/team-member/member-2.jpg" alt="Annette" class="img-fluid">
+              <div class="overlay">
+                <h5>Annette Black</h5>
+                <p>Education Counsellor</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="team-img-card">
+              <img src="images/team-member/member-3.jpg" alt="Courtney" class="img-fluid">
+              <div class="overlay">
+                <h5>Courtney Henry</h5>
+                <p>Visa Consultant</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="team-img-card">
+              <img src="images/team-member/member-4.jpg" alt="Wade" class="img-fluid">
+              <div class="overlay">
+                <h5>Wade Warren</h5>
+                <p>Legal Expert</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="team-img-card">
+              <img src="images/team-member/member-5.jpg" alt="Kristin" class="img-fluid">
+              <div class="overlay">
+                <h5>Kristin Watson</h5>
+                <p>Documentation</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="team-img-card">
+              <img src="images/team-member/member-6.jpg" alt="Ralph" class="img-fluid">
+              <div class="overlay">
+                <h5>Ralph Edwards</h5>
+                <p>Support Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--happy student-->
+<section class="happy-students-slider-section">
+  <h2>Happy Students with 5-Star Reviews</h2>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/happy-student/student-1.jpg" alt="Student 1">
+        <h4>Rima Akter</h4>
+        <p>"Visa process was smooth and fast!"</p>
+        <div class="text-warning">★★★★★</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/happy-student/student-2.jpg" alt="Student 2">
+        <h4>Sadia Noor</h4>
+        <p>"Amazing service and support."</p>
+        <div class="text-warning">★★★★★</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/happy-student/student-3.jpg" alt="Student 3">
+        <h4>Mitu Roy</h4>
+        <p>"Highly recommend them!"</p>
+        <div class="text-warning">★★★★★</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/happy-student/student-4.jpg" alt="Student 4">
+        <h4>Rahim Uddin</h4>
+        <p>"Quick and reliable visa help."</p>
+        <div class="text-warning">★★★★★</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/happy-student/student-5.jpg" alt="Student 5">
+        <h4>Mehedi Hasan</h4>
+        <p>"Helpful from start to end."</p>
+        <div class="text-warning">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Contact section-->
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+      <!-- Form Column -->
+      <div class="col-md-6 d-flex">
+        <form class="p-4 shadow rounded w-100 bg-white" id="contactForm">
+          <h2 class="mb-4">Contact Us</h2>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter full name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea class="form-control" id="address" rows="2" placeholder="Enter address"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="degree" class="form-label">Which Degree Abroad?</label>
+            <select class="form-select" id="degree">
+              <option selected disabled>Select degree</option>
+              <option value="bachelor">Bachelor</option>
+              <option value="masters">Masters</option>
+              <option value="diploma">Diploma</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Map Column -->
+      <div class="col-md-6 d-flex">
+        <div class="map-container w-100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902209205356!2d90.39126831543274!3d23.750876684590094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b856e2dd4eaf%3A0x13c36d73e72d4d56!2sDhaka%20University!5e0!3m2!1sen!2sbd!4v1649511201234!5m2!1sen!2sbd"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-100 h-100 rounded">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--footer-->
+ <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Column 1: Logo & Details -->
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/" alt="SS-EMPORIUM Logo">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea quaerat odio magni praesentium corrupti officia minus itaque, cum alias.
+        </p>
+      </div>
+
+      <!-- Column 2: Useful Links -->
+<div class="footer-column">
+<h4>Useful Links</h4>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li> <!-- ✅ New Login link added -->
+</ul>
+</div>
+
+
+      <!-- Column 3: Social Links -->
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Text -->
+    <div class="footer-bottom">
+      <p>© 2025 This Website. All rights reserved. Developed by Lilium Info Tech</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  
+   
+          
+          
+    
+  
+        
+
+
+
+
+<!--custom js-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const smallNavbar = document.getElementById('smallNavbar');
+      const premiumNavbar = document.getElementById('premiumNavbar');
+      const smallNavbarHeight = smallNavbar.offsetHeight;
+    
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) { // একটু স্ক্রল করলে
+          smallNavbar.style.transform = `translateY(-${smallNavbarHeight}px)`; // Small navbar উপরে চলে যাবে
+          premiumNavbar.style.top = '0'; // Premium navbar একদম টপে
+        } else {
+          smallNavbar.style.transform = 'translateY(0)'; // Small navbar আবার দেখাবে
+          premiumNavbar.style.top = `${smallNavbarHeight}px`; // Premium navbar আবার নিচে আসবে
+        }
+      });
+    });
+    </script>
+    
+<!---JS part-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
